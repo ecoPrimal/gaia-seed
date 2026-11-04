@@ -23,13 +23,15 @@
       "identity_chain": {
         "token": "GAIA:6ed3c05161da5055",
         "blake3": "6ed3c05161da5055ff88a11cc3d97079dc110a121307bfec3090cf8c6c980b7a",
-        "loamspine_spine": "01a1412b-848a-74c0-9a27-72fec03b8638",
-        "did": "did:primal:5b2cb006-b35f-484e-8489-d5527068a8ff"
+        "loamspine_spine": "01a1a84e-4a25-75a3-a527-392b0439e29f",
+        "did": "did:primal:5b2cb006-b35f-484e-8489-d5527068a8ff",
+        "spine_height": 6,
+        "certificate_id": "01a1a851-7b6c-73a3-8146-b1094dc8e2de"
       },
       "genome": {
         "source": "14 public repos at github.com/ecoPrimal",
-        "rust_lines": 3656511,
-        "crates": 258,
+        "rust_lines": 3656485,
+        "crates": 264,
         "primals": 17
       },
       "hosts": [
@@ -230,5 +232,27 @@
     "Nostr SDK (Python) can republish identity on schedule",
     "IPFS can re-pin on content change",
     "mushroom-self-publish-rss.sh already publishes to RSS every 30min"
-  ]
+  ],
+  "genome_crosslink": {
+    "ground_dna_hash": "22d5e1b50f2447b16cc2637dfe160f1b9f7e084ebc40c53ab66c95536bad262e",
+    "ed25519_signature": "sUu7ohBNCGmELS3Kuxk670ss8gKsuCHyv1M5y3HVzA5NkAOYiIzQRSIJ0r8pKdLW+O/PyxzUqDa/D2ZhEo9OAg==",
+    "public_key": "D5tvPGsbxZoSyOYJSp+HEQHI4S4gGFmEGvQUaDFqADo=",
+    "braid_entry_index": 5,
+    "bonds": [
+      "genome-ground-dna",
+      "germline-somatic-bond"
+    ],
+    "crosslink_verified": true,
+    "differentiation_pathway": [
+      "germline (gaia-seed) \u2192 token",
+      "token \u2192 sourDough DNA templates",
+      "sourDough scaffold \u2192 cargo build",
+      "cargo build \u2192 differentiated binary",
+      "bearDog sign \u2192 Ed25519 sidecar",
+      "loamSpine anchor \u2192 spine entry",
+      "nestGate CAS \u2192 BLAKE3 content-addressed",
+      "biomeOS deploy \u2192 systemd nucleus service",
+      "swarmVine gossip \u2192 epidemic propagation"
+    ]
+  }
 }
