@@ -1,0 +1,64 @@
+{
+  "chain_type": "gaia-identity",
+  "token": "GAIA:6ed3c05161da5055",
+  "wave": "179b",
+  "timestamp": "2026-11-04T20:46:00Z",
+  "spine": {
+    "id": "01a1a84e-4a25-75a3-a527-392b0439e29f",
+    "owner": "gaia",
+    "height": 2,
+    "genesis_hash": "d0cc96beb8b87d7dbca331ab7284c7e32b361786b8e335d9fd551023cbc2225d",
+    "tip_hash": "0b77c148bc3af112d9de0c259823611da3dfeb006c1a13d8cd6cc8b1b83cd668"
+  },
+  "entries": [
+    {
+      "index": 0,
+      "type": "Genesis",
+      "hash": "d0cc96beb8b87d7dbca331ab7284c7e32b361786b8e335d9fd551023cbc2225d"
+    },
+    {
+      "index": 1,
+      "type": "DataAnchor",
+      "data_hash": "94c98404738de94b8aa47ce27dfc6bb575e6b1047b29a6b090198253e7183122",
+      "size": 8158,
+      "hash": "0b77c148bc3af112d9de0c259823611da3dfeb006c1a13d8cd6cc8b1b83cd668"
+    }
+  ],
+  "anchor": {
+    "target": "FederatedSpine",
+    "peer_id": "eastGate",
+    "tx_ref": "gaia-identity:wave-179b:94c98404738de94b8aa47ce27dfc6bb575e6b1047b29a6b090198253e7183122",
+    "entry_hash": "ca3a30a26e357ec995fbb831431fb48809b6a3d5c8393a1370aafd18382bf945"
+  },
+  "crypto": {
+    "algorithm": "Ed25519",
+    "public_key": "D5tvPGsbxZoSyOYJSp+HEQHI4S4gGFmEGvQUaDFqADo=",
+    "signature": "hfaMhS8RE1QINlBY1faLEHf/JZmcqoFEP/W9iDVJL0fyMITRNwW0dFaJMoy5DYuSbsIcrwMhTpq/QmPZ6s2VBQ==",
+    "key_id": "default_signing_key",
+    "provider": "bearDog v0.9.0"
+  },
+  "content_addressed_storage": {
+    "provider": "nestGate v0.5.0",
+    "namespace": "gaia-identity",
+    "files": {
+      "gaia-lysogeny-prophage.json": "94c98404738de94b8aa47ce27dfc6bb575e6b1047b29a6b090198253e7183122",
+      "germline-somatic-map.json": "83ea501a6b4734220718d8a04ece7a30fabb0c97f963c214e3103fc03f50e597",
+      "p-np-equation.json": "54022fc30133ca7a9b93fc24317a62aee59f7b63e0210af6a053fcc5793986cc",
+      "tech-leverage-map.json": "015861ed3fb3f670bbf3feaede0bb724293fdd87a3bf160368fa1ecc9a5875bd",
+      "nostr-injection.json": "70ac729e7981a26bdb7e988f671eb6b5a65a0e49a86c6a180fa371a6b58e7531",
+      "session-digest-179b.json": "5716329b4f7ed7b155b47bc01e1554b072063dc62a97a5de26b628b0a317bbda"
+    }
+  },
+  "permanence_record": {
+    "nestgate_key": "gaia-identity-chain",
+    "nestgate_namespace": "gaia-permanence",
+    "nostr_npub": "npub1zef93r77duvek84rhjs83merzzvg3vs78272f5skxn2t75k8czhqsxnksf",
+    "github_repo": "ecoPrimal/gaia-seed",
+    "tor_onion": "iqwvbmlgvoiilj2hr43anj2keseao2lptquad36je5p5p2etw5e3riid.onion"
+  },
+  "inclusion_proof": {
+    "entry_hash": "0b77c148bc3af112d9de0c259823611da3dfeb006c1a13d8cd6cc8b1b83cd668",
+    "tip_matches": true,
+    "verified": true
+  }
+}
