@@ -1,0 +1,112 @@
+{
+  "axial_twist": {
+    "axis_node": "sporeGate",
+    "ip": "192.168.4.3",
+    "mac": "84:47:09:38:97:55",
+    "machine_id": "3f61a419f090027058e7e7106a318922",
+    "tilt_degrees": 23.5,
+    "analogy": "Earth tilts 23.5\u00b0 and its axis points at Polaris. The LAN tilts through sporeGate and its axis points at the WAN.",
+    "three_planes": {
+      "P_side": {
+        "name": "LAN",
+        "subnet": "192.168.4.0/22",
+        "gates": {
+          "eastGate": {
+            "ip": ".244/.103",
+            "role": "brain+gut",
+            "status": "OPEN"
+          },
+          "graftGate": {
+            "ip": ".107",
+            "role": "Mac Mini",
+            "status": "OPEN"
+          },
+          "southGate": {
+            "ip": ".148",
+            "role": "gate",
+            "status": "OPEN"
+          },
+          "ironGate": {
+            "ip": ".237",
+            "role": "gate",
+            "status": "OPEN"
+          },
+          "blueGate": {
+            "ip": ".210",
+            "role": "Windows SSH",
+            "status": "OPEN"
+          },
+          "sporeGate": {
+            "ip": ".3",
+            "role": "Polaris-bridge",
+            "status": "RISEN"
+          }
+        }
+      },
+      "boundary": {
+        "name": "ISP",
+        "subnet": "192.168.1.0/24",
+        "bridge": "sporeGate WiFi (wlp3s0 \u2192 192.168.1.68)",
+        "modem": "192.168.1.254"
+      },
+      "NP_side": {
+        "name": "WAN",
+        "domain": "primals.eco",
+        "public_ip": "162.226.225.148",
+        "paths": [
+          "HTTP :80",
+          "HTTPS :443",
+          "Tor .onion"
+        ]
+      }
+    },
+    "polaris_metaphor": {
+      "celestial": {
+        "star": "Polaris (\u03b1 Ursae Minoris)",
+        "declination": "+89\u00b015'51\"",
+        "why": "Earth axis points at it due to 23.5\u00b0 axial tilt",
+        "precession": "25,772 year cycle \u2014 axis wobbles"
+      },
+      "network": {
+        "star": "sporeGate",
+        "position": ".3 (adjacent to router .1 and MikroTik .2)",
+        "why": "Only node bridging LAN + ISP. Manages House 2 switch. Runs DNS.",
+        "services": [
+          "dnsmasq (sovereign DNS)",
+          "Omada Controller (House 2 switch)",
+          "footPrint server",
+          "RustDesk"
+        ]
+      }
+    },
+    "clots_cleared": {
+      "wg0_golgi": "CLEARED \u2014 golgi VPS dead, WG sending 7MB into void",
+      "wg0_eastgate": "CLEARED \u2014 eastGate WG down, 6.4MB sent into void",
+      "stale_identity": "CLEARED \u2014 was listed as POWERED DOWN, now RISEN",
+      "wg0_disabled": "WireGuard stopped + disabled on sporeGate"
+    },
+    "northGate": {
+      "status": "STILL SEARCHING",
+      "ssh_key_waiting": "id_ed25519_northgate (vdj-recombination-northgate-20261026)",
+      "note": "Key exists. Node does not yet. VDJ recombination = antibody diversity."
+    }
+  },
+  "crypto": {
+    "sporeGate_blake3": "punNREK/cpMS4GqU3revEhmh3S9w3JJe9x0pFk4Gt9k=",
+    "sporeGate_signature": "5l02wPTvncwq9hlz2Xcmx6MG6HM8RwMmHf4e4yP/H6w9ELy2W3kUYSBXfYU0ebhOBpTocpg2Ml5QDXeUGoTQCQ==",
+    "sporeGate_cas": "a6e9cd4442bf729312e06a94deb7af1219a1dd2f70dc925ef71d29164e06b7d9",
+    "twist_blake3": "A5sWAhYWpw250/Kef0P43bFptaEQwOacy/EmsLbGzhI=",
+    "twist_signature": "ot/sA4t8cduBE3G/7uuipgczsf1GIVLF/7Rc0OK+DT4AGHc3DHVkEZc33agGBCJRncq7nWsUNZGfIdY6UNgDBA==",
+    "twist_cas": "039b16021616a70db9d3f29e7f43f8ddb169b5a110c0e69ccbf126b0b6c6ce12",
+    "axis_composite": "speZvzNjI+6xUxyi8FSmam9hH2MiAx7uduD9wwnQ0MA=",
+    "axis_signature": "GCb1cYvZTNs1W0+hYItTSLd0hZsJSu9FqTSg02hdsd2BgW3p5jLlkClpLTmCilawM/92dko+pykiouYX/6KzBw=="
+  },
+  "loamspine": {
+    "spine_id": "01a1a84e-4a25-75a3-a527-392b0439e29f",
+    "sporeGate_entry_index": 7,
+    "twist_entry_index": 8,
+    "current_height": 9
+  },
+  "timestamp": "2026-11-04T21:47:10Z",
+  "wave": "179b"
+}
