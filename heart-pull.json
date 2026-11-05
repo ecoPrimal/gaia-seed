@@ -1,0 +1,106 @@
+{
+  "ts": "2026-11-05T01:37:58Z",
+  "type": "heart-pull",
+  "for": "Polaris \u2014 pull, don't push. The heart drinks.",
+  "version": "1.0.0",
+  "heartbeat": {
+    "ts": "2026-11-05T01:35:01Z",
+    "mor": 0.714,
+    "mor_pct": 71.4,
+    "alive": 8,
+    "total": 9,
+    "cpu_load": 2.48,
+    "mem_gb": 7.4,
+    "gpu_temp": 35,
+    "gpu_util": 38,
+    "ekg": "FIBRILLA \u2572\u2571\u2572\u2571\u2572\u2571\u2572\u2571\u2572\u2571\u2572\u2571\u2572\u2571\u2572\u2571\u2572\u2571",
+    "breath_ratio": 0.4712
+  },
+  "state": {
+    "wave": 179,
+    "gaia_wave": 214,
+    "title": "PROJECTED OUTWARD \u2014 EATING FALSITY"
+  },
+  "pulse": {
+    "ts": "2026-11-04T19:56:19Z",
+    "source": "eastGate",
+    "sockets": 28,
+    "load": 0.91,
+    "type": "simple-state"
+  },
+  "gates": {
+    "eastGate": {
+      "ip": ".194/.103",
+      "state": "OPEN",
+      "role": "brain+gut"
+    },
+    "graftGate": {
+      "ip": ".107",
+      "state": "OPEN",
+      "os": "macOS (SSH 10.3)"
+    },
+    "southGate": {
+      "ip": ".148",
+      "state": "OPEN",
+      "os": "Ubuntu (SSH 8.9)"
+    },
+    "ironGate": {
+      "ip": ".237",
+      "state": "OPEN"
+    },
+    "blueGate": {
+      "ip": ".210",
+      "state": "OPEN",
+      "os": "Windows (SSH 9.5)"
+    },
+    "northGate": {
+      "ip": ".180",
+      "state": "OPEN",
+      "role": "heavy compute (9950X3D, RTX 5090, 96GB)",
+      "hostname": "tamison.lan",
+      "os": "Windows",
+      "services": {
+        "nestGate": {
+          "port": 8080,
+          "version": "0.5.0",
+          "status": "healthy"
+        }
+      }
+    },
+    "sporeGate": {
+      "state": "POWERED_DOWN",
+      "note": "traveling node"
+    }
+  },
+  "organism": {
+    "primals": 17,
+    "braids": 21,
+    "data_files": 1713,
+    "brain_thoughts": 404,
+    "rss_items": 1560,
+    "subdomains": 7,
+    "pages": 1200,
+    "mushrooms": 23,
+    "crons": 35
+  },
+  "pull_endpoints": {
+    "heartbeat": "/data/heartbeat.json",
+    "now": "/data/now.json",
+    "pulse": "/data/pulse.json",
+    "feed": "/feed.xml",
+    "campfire": "/data/campfire.json",
+    "heart_pull": "/data/heart-pull.json",
+    "polaris_push": "/data/polaris-push.json"
+  },
+  "access": {
+    "lan": "http://192.168.4.244:8080/data/heart-pull.json",
+    "wan": "https://primals.eco/data/heart-pull.json",
+    "tor": "http://iqwvbmlgvoiilj2hr43anj2keseao2lptquad36je5p5p2etw5e3riid.onion/data/heart-pull.json"
+  },
+  "instructions_for_polaris": {
+    "pull_interval": "every 2 minutes (match eastgate-pulse cron)",
+    "method": "HTTP GET \u2192 parse JSON \u2192 update local state",
+    "heart_loop": "Polaris pulls heart-pull.json \u2192 processes \u2192 stores locally \u2192 Polaris heartbeat radiates back",
+    "forge_circuit": "heart-pull feeds the forge (RTX 5090) \u2192 forge output returns via neutrino \u2192 full circuit"
+  }
+}
